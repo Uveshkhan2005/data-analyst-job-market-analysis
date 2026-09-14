@@ -1,0 +1,1 @@
+# Python__pycache__/*.py[cod]*.pyo*.pyd*.so# Jupyter.ipynb_checkpoints/# Virtual environmentsvenv/env/.venv/# Environment variables.env.env.*# VS Code.vscode/# OS files.DS_StoreThumbs.dbdesktop.ini# Power BI temporary/backup files*.tmp*.bak# Python cache.pytest_cache/.mypy_cache/# Excel temporary files~$*.xlsx~$*.xls
