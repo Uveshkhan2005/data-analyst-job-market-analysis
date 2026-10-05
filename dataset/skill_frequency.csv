@@ -1,0 +1,21 @@
+skill,job_count,job_posting_percentage
+python,398,13.85
+excel,262,9.12
+sql,204,7.1
+aws,195,6.79
+azure,145,5.05
+java,130,4.52
+machine learning,110,3.83
+javascript,86,2.99
+postgresql,73,2.54
+gcp,60,2.09
+spark,48,1.67
+etl,40,1.39
+dbt,37,1.29
+data analysis,34,1.18
+snowflake,33,1.15
+power bi,33,1.15
+pytorch,26,0.9
+looker,26,0.9
+mysql,24,0.84
+tableau,24,0.84

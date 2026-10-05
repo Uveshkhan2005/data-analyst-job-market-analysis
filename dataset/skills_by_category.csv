@@ -1,0 +1,51 @@
+job_category,skills,job_count
+Data & Analytics,python,90
+Data & Analytics,sql,83
+Data & Analytics,aws,40
+Data & Analytics,machine learning,35
+Data & Analytics,dbt,31
+Data & Analytics,etl,29
+Data & Analytics,azure,26
+Data & Analytics,spark,23
+Data & Analytics,excel,21
+Data & Analytics,snowflake,20
+Finance,excel,12
+Finance,java,1
+Finance,looker,1
+Finance,sql,1
+HR,excel,5
+HR,python,2
+HR,sql,2
+HR,java,1
+HR,javascript,1
+HR,power bi,1
+Other,excel,157
+Other,python,56
+Other,sql,42
+Other,azure,36
+Other,machine learning,27
+Other,aws,25
+Other,javascript,20
+Other,java,17
+Other,spark,15
+Other,data analysis,12
+Sales & Marketing,excel,39
+Sales & Marketing,sql,4
+Sales & Marketing,aws,3
+Sales & Marketing,looker,2
+Sales & Marketing,azure,1
+Sales & Marketing,etl,1
+Sales & Marketing,gcp,1
+Sales & Marketing,javascript,1
+Sales & Marketing,mysql,1
+Sales & Marketing,power bi,1
+Software & IT,python,249
+Software & IT,aws,127
+Software & IT,java,107
+Software & IT,azure,82
+Software & IT,sql,72
+Software & IT,postgresql,66
+Software & IT,javascript,60
+Software & IT,machine learning,48
+Software & IT,gcp,35
+Software & IT,excel,28

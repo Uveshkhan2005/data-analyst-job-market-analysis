@@ -1,0 +1,249 @@
+skill_1,skill_2,job_count
+aws,python,111
+python,sql,108
+aws,azure,83
+machine learning,python,76
+azure,python,64
+aws,gcp,53
+aws,sql,52
+java,python,50
+azure,gcp,42
+azure,sql,41
+aws,java,37
+gcp,python,33
+javascript,python,33
+dbt,sql,31
+postgresql,python,30
+dbt,python,30
+etl,sql,29
+aws,postgresql,29
+java,sql,29
+python,spark,28
+etl,python,25
+aws,machine learning,25
+python,pytorch,24
+javascript,sql,24
+machine learning,sql,22
+spark,sql,22
+excel,python,22
+aws,spark,21
+excel,sql,20
+snowflake,sql,20
+java,javascript,20
+looker,sql,20
+gcp,sql,20
+postgresql,sql,20
+aws,excel,20
+machine learning,pytorch,19
+java,postgresql,19
+power bi,sql,18
+aws,etl,18
+azure,spark,17
+azure,etl,16
+dbt,snowflake,16
+excel,power bi,16
+python,statistics,16
+data analysis,python,16
+azure,excel,15
+machine learning,statistics,15
+aws,dbt,15
+dbt,spark,15
+bigquery,sql,15
+sql,tableau,15
+dbt,etl,15
+azure,java,15
+aws,javascript,14
+python,snowflake,14
+pytorch,tensorflow,13
+bigquery,python,13
+bigquery,dbt,13
+python,tensorflow,13
+power bi,tableau,13
+javascript,postgresql,12
+azure,machine learning,12
+azure,postgresql,12
+aws,snowflake,11
+excel,gcp,11
+sql,statistics,11
+azure,javascript,10
+machine learning,tensorflow,10
+snowflake,tableau,10
+looker,tableau,10
+etl,spark,10
+etl,snowflake,10
+looker,python,10
+power bi,python,9
+postgresql,snowflake,9
+aws,mysql,9
+looker,power bi,9
+data analysis,sql,9
+bigquery,snowflake,9
+power bi,snowflake,9
+excel,tableau,8
+machine learning,spark,8
+python,tableau,8
+gcp,java,7
+java,machine learning,7
+etl,power bi,7
+looker,snowflake,7
+mysql,python,7
+azure,dbt,7
+pandas,python,7
+mysql,postgresql,7
+gcp,machine learning,7
+gcp,spark,7
+gcp,postgresql,6
+excel,java,6
+bigquery,spark,6
+etl,gcp,6
+dbt,gcp,6
+java,mysql,6
+excel,spark,6
+excel,javascript,6
+pytorch,sql,6
+numpy,python,6
+sql,tensorflow,6
+python,scikit-learn,6
+excel,looker,6
+aws,pytorch,6
+aws,tensorflow,6
+data visualization,python,6
+snowflake,spark,6
+dbt,excel,6
+aws,bigquery,5
+azure,snowflake,5
+data analysis,excel,5
+machine learning,scikit-learn,5
+excel,postgresql,5
+bigquery,looker,5
+dbt,looker,5
+excel,snowflake,5
+dbt,tableau,5
+bigquery,machine learning,5
+gcp,pytorch,5
+javascript,mysql,5
+dbt,statistics,5
+bigquery,gcp,5
+numpy,pandas,5
+gcp,tensorflow,5
+etl,excel,5
+excel,machine learning,4
+dbt,machine learning,4
+looker,machine learning,4
+scikit-learn,sql,4
+azure,power bi,4
+looker,statistics,4
+machine learning,tableau,4
+machine learning,numpy,4
+scikit-learn,tensorflow,4
+bigquery,tableau,4
+dbt,power bi,4
+bigquery,power bi,4
+aws,data analysis,4
+bigquery,etl,4
+pytorch,scikit-learn,4
+aws,statistics,4
+etl,machine learning,4
+data visualization,sql,4
+statistics,tableau,3
+aws,data visualization,3
+javascript,machine learning,3
+bigquery,excel,3
+azure,tensorflow,3
+azure,pytorch,3
+machine learning,pandas,3
+numpy,tensorflow,3
+pandas,sql,3
+gcp,snowflake,3
+azure,mysql,3
+numpy,pytorch,3
+etl,tableau,3
+machine learning,postgresql,3
+java,tensorflow,3
+snowflake,statistics,3
+data analysis,machine learning,3
+etl,looker,3
+power bi,statistics,3
+machine learning,power bi,3
+data visualization,postgresql,2
+aws,scikit-learn,2
+etl,pandas,2
+pytorch,statistics,2
+aws,numpy,2
+aws,pandas,2
+etl,numpy,2
+numpy,scikit-learn,2
+aws,power bi,2
+data visualization,looker,2
+data analysis,power bi,2
+java,spark,2
+bigquery,statistics,2
+data visualization,tableau,2
+java,pytorch,2
+java,statistics,2
+numpy,statistics,2
+statistics,tensorflow,2
+data analysis,statistics,2
+aws,tableau,2
+gcp,tableau,2
+etl,postgresql,2
+azure,tableau,2
+gcp,javascript,2
+pandas,scikit-learn,2
+javascript,power bi,2
+postgresql,tensorflow,2
+azure,bigquery,2
+postgresql,pytorch,2
+pandas,tensorflow,2
+machine learning,snowflake,2
+excel,statistics,2
+numpy,sql,2
+pandas,pytorch,2
+data visualization,snowflake,1
+data analysis,snowflake,1
+azure,scikit-learn,1
+bigquery,data analysis,1
+data analysis,tableau,1
+data analysis,looker,1
+data analysis,dbt,1
+java,numpy,1
+postgresql,power bi,1
+postgresql,spark,1
+java,pandas,1
+pandas,statistics,1
+data visualization,machine learning,1
+etl,mysql,1
+excel,mysql,1
+gcp,mysql,1
+data visualization,etl,1
+data visualization,javascript,1
+azure,pandas,1
+azure,numpy,1
+data analysis,spark,1
+data analysis,etl,1
+scikit-learn,statistics,1
+javascript,spark,1
+gcp,power bi,1
+data visualization,power bi,1
+bigquery,postgresql,1
+dbt,postgresql,1
+etl,javascript,1
+data analysis,pytorch,1
+data analysis,tensorflow,1
+mysql,sql,1
+bigquery,javascript,1
+javascript,looker,1
+javascript,snowflake,1
+javascript,tableau,1
+azure,data analysis,1
+data analysis,gcp,1
+data visualization,statistics,1
+bigquery,pytorch,1
+bigquery,scikit-learn,1
+bigquery,tensorflow,1
+gcp,scikit-learn,1
+spark,tableau,1
+matplotlib,pandas,1
+matplotlib,python,1
+matplotlib,scikit-learn,1
+matplotlib,sql,1

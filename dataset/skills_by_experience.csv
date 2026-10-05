@@ -1,0 +1,41 @@
+experience_level,skills,job_count
+Entry Level,excel,20
+Entry Level,python,18
+Entry Level,sql,10
+Entry Level,javascript,7
+Entry Level,aws,4
+Entry Level,azure,4
+Entry Level,etl,3
+Entry Level,java,3
+Entry Level,machine learning,2
+Entry Level,power bi,2
+Lead / Manager,excel,38
+Lead / Manager,python,28
+Lead / Manager,aws,20
+Lead / Manager,sql,16
+Lead / Manager,machine learning,14
+Lead / Manager,azure,10
+Lead / Manager,gcp,7
+Lead / Manager,spark,7
+Lead / Manager,java,6
+Lead / Manager,etl,5
+Mid Level / Other,python,219
+Mid Level / Other,excel,140
+Mid Level / Other,sql,99
+Mid Level / Other,aws,86
+Mid Level / Other,java,72
+Mid Level / Other,azure,69
+Mid Level / Other,javascript,55
+Mid Level / Other,machine learning,55
+Mid Level / Other,postgresql,37
+Mid Level / Other,gcp,32
+Senior,python,133
+Senior,aws,85
+Senior,sql,79
+Senior,excel,64
+Senior,azure,62
+Senior,java,49
+Senior,machine learning,39
+Senior,postgresql,30
+Senior,spark,22
+Senior,gcp,21
