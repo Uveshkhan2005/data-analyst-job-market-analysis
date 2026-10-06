@@ -2,745 +2,578 @@
 
 ### End-to-End Data Analytics Project | Python | API | SQL | PostgreSQL | Power BI
 
-An end-to-end Job Market Analytics project focused on analyzing Data Analyst job opportunities, required skills, experience levels, locations, industries, work arrangements, and hiring patterns.
+An end-to-end Job Market Analytics project focused on analyzing job postings to understand job demand, required technical skills, experience levels, locations, employment types, work arrangements, and hiring trends.
 
-The project combines **Python, API-based data collection, SQL, PostgreSQL, and Power BI** to transform job-market data into actionable career and workforce insights.
+The project combines **Python, API-based data collection, data cleaning, exploratory data analysis (EDA), SQL, PostgreSQL, and Power BI** to transform raw job-posting data into actionable career and workforce insights.
 
 ---
 
-# Project Overview
+## Project Overview
 
-The Data Analyst job market changes continuously, with companies looking for different combinations of technical and business skills.
+The data analyst job market changes continuously, with companies looking for professionals who possess a combination of technical, analytical, and business skills.
 
 This project analyzes job-posting data to understand:
 
-- Demand for Data Analyst roles
-- Most requested technical skills
-- Popular locations
-- Experience requirements
-- Industry demand
-- Work arrangements
-- Salary information where available
-- Hiring patterns
-- Technology demand
+- Demand for data analyst and related analytics roles
+- Most requested technical and analytical skills
+- Popular job locations and geographic demand
+- Remote versus non-remote opportunities
+- Employment types and job requirements
+- Companies with the highest number of job postings
+- Demand for Python, SQL, Excel, Power BI, and Tableau
+- Combinations of skills requested by employers
+- Job-posting trends over time
 
-The project follows a complete analytics workflow:
-
-```text
-Business Problem
-        ↓
-Data Collection
-        ↓
-Data Validation
-        ↓
-Data Cleaning
-        ↓
-Feature Engineering
-        ↓
-Python EDA
-        ↓
-SQL / PostgreSQL Analysis
-        ↓
-Skill & Market Analysis
-        ↓
-Power BI Dashboard
-        ↓
-Business Insights
-        ↓
-Recommendations
-```
+The objective is to identify patterns in job postings and understand the skills and requirements that may help aspiring data analysts prepare for employment.
 
 ---
 
-# Business Problem
+## Project Objectives
 
-Job seekers and organizations can benefit from understanding which skills, locations, industries, and experience levels are most strongly represented in Data Analyst job postings.
-
-This project focuses on answering:
-
-- How many Data Analyst opportunities are available?
-- Which technical skills are requested most frequently?
-- How often are SQL, Excel, Python, and Power BI mentioned?
-- Which locations have the highest demand?
-- Which industries hire Data Analysts most frequently?
-- What experience levels are most requested?
-- What proportion of roles are remote, hybrid, or on-site?
-- Which companies are hiring most frequently?
-- Which skills appear together most often?
-- What trends can be observed in the Data Analyst job market?
+- Collect job-posting data using a public API.
+- Store and preserve the original raw data.
+- Clean and standardize job-posting information.
+- Perform exploratory data analysis using Python.
+- Extract and analyze technical skills from job descriptions and tags.
+- Store structured job data in PostgreSQL.
+- Write SQL queries to answer business questions.
+- Build an interactive Power BI dashboard.
+- Develop evidence-based insights into job demand and employer requirements.
+- Present the complete workflow in a reproducible GitHub project.
 
 ---
 
-# Business Objectives
+## Tools and Technologies
 
-The project aims to:
-
-- Collect job-market data programmatically
-- Clean and standardize job-posting information
-- Analyze demand for Data Analyst skills
-- Identify location and industry patterns
-- Analyze experience requirements
-- Examine work arrangements
-- Compare technology demand
-- Identify frequently requested skill combinations
-- Build an interactive Power BI dashboard
-- Translate job-market data into practical insights
-
----
-
-# Data Collection
-
-Job-posting data will be collected from an available API or structured job-data source.
-
-The collection process will focus on fields relevant to Data Analyst roles.
-
-### Expected Data Fields
-
-```text
-Job Title
-Company
-Location
-Industry
-Experience
-Employment Type
-Work Arrangement
-Salary
-Skills
-Description
-Posting Date
-Job URL
-```
-
-The exact source, collection method, and available fields will be documented in the project notebook.
-
----
-
-# Tools & Technologies
-
-## Programming & Data Collection
-
-- Python
-- Pandas
-- NumPy
-- Requests / API-based data collection
-
-## Data Visualization
-
-- Matplotlib
-- Seaborn
-
-## Database & SQL
-
-- SQL
-- PostgreSQL
-- pgAdmin
-
-## Business Intelligence
-
-- Power BI
-- DAX
-- Power Query
-
-## Development & Version Control
-
-- Jupyter Notebook
-- VS Code
-- Git
-- GitHub
-
----
-
-# Analytical Workflow
-
-```text
-Job Market Data
-        ↓
-API / Data Collection
-        ↓
-Data Inspection
-        ↓
-Data Validation
-        ↓
-Data Cleaning
-        ↓
-Feature Engineering
-        ↓
-Python EDA
-        ↓
-Skill Analysis
-        ↓
-SQL / PostgreSQL
-        ↓
-Market Segmentation
-        ↓
-Power BI Dashboard
-        ↓
-Business Insights
-        ↓
-Recommendations
-```
-
----
-
-# Data Validation
-
-The collected data will be checked for:
-
-- Missing values
-- Duplicate job postings
-- Invalid job titles
-- Inconsistent locations
-- Inconsistent company names
-- Missing salary information
-- Invalid experience values
-- Duplicate URLs
-- Date consistency
-- Unstructured skill information
-
-The objective is to ensure that the collected job-market data is reliable enough for analysis.
-
----
-
-# Data Cleaning
-
-The cleaning process will include:
-
-- Removing duplicate job postings
-- Standardizing job titles
-- Standardizing location names
-- Cleaning company names
-- Handling missing values
-- Standardizing experience levels
-- Standardizing employment types
-- Normalizing work arrangement values
-- Cleaning salary fields where available
-- Extracting technical skills from job descriptions
-- Converting posting dates into proper datetime format
-
----
-
-# Feature Engineering
-
-Additional analytical fields may include:
-
-```text
-Job Title Category
-Experience Level
-Work Arrangement
-Salary Range
-Job Posting Month
-Job Posting Year
-Location Category
-Skill Count
-Remote Flag
-```
-
-A structured skills table or skill indicators may also be created for analyzing technology demand.
-
----
-
-# Key Performance Indicators
-
-The project will calculate job-market KPIs including:
-
-| KPI | Description |
+| Tool | Purpose |
 |---|---|
-| Total Job Postings | Number of analyzed job postings |
-| Companies Hiring | Number of unique companies |
-| Locations | Number of locations represented |
-| Remote Jobs | Number of remote opportunities |
-| Hybrid Jobs | Number of hybrid opportunities |
-| Top Skill | Most frequently requested skill |
-| Average Salary | Average salary where data is available |
-| Average Skills per Job | Average number of requested skills |
-
-These KPIs will form the foundation of the Power BI dashboard.
-
----
-
-# Python Exploratory Data Analysis
-
-Python will be used to analyze:
-
-## Job Demand
-
-- Job posting volume
-- Posting trends
-- Hiring patterns
-
-## Skills
-
-- Most requested skills
-- Skill frequency
-- Skill combinations
-- Technical skill demand
-
-## Location
-
-- Jobs by city
-- Jobs by state/region
-- Remote opportunities
-- Geographic demand
-
-## Experience
-
-- Entry-level opportunities
-- Mid-level opportunities
-- Senior-level opportunities
-- Experience distribution
-
-## Industry
-
-- Jobs by industry
-- Industry skill requirements
-- Industry-level demand
+| Python | Data collection, cleaning, and analysis |
+| Requests | API data collection |
+| Pandas | Data manipulation and transformation |
+| NumPy | Numerical operations |
+| Matplotlib | Data visualization |
+| Seaborn | Statistical visualization |
+| PostgreSQL | Relational database storage |
+| SQL | Business analysis and data querying |
+| Power BI | Interactive dashboard development |
+| DAX | Dashboard measures and calculations |
+| Power Query | Data transformation and preparation |
+| Git | Version control |
+| GitHub | Project documentation and code hosting |
 
 ---
 
-# Skill Demand Analysis
+## Dataset Overview
 
-A major focus of the project will be identifying the skills most frequently requested in Data Analyst job postings.
+### Data Source
 
-Potential skill categories include:
+**API:** [Arbeitnow Job Board API](https://www.arbeitnow.com/blog/job-board-api)
+
+The project uses publicly available job-posting data from the Arbeitnow Job Board API.
+
+The API provides job listings from multiple sources in a consistent format. Available fields include job titles, company names, descriptions, locations, remote-work indicators, tags, employment types, and job URLs.
+
+### Dataset Information
+
+| Attribute | Details |
+|---|---|
+| Data source | Arbeitnow Job Board API |
+| Data format | JSON |
+| Data collection method | API-based |
+| Analytical format | CSV and PostgreSQL |
+| Primary unit of analysis | Job posting |
+| Main focus | Job demand, skills, locations, and work arrangements |
+
+### Main Dataset Fields
+
+The collected dataset includes the following fields:
+
+| Column | Description |
+|---|---|
+| `slug` | Job-posting identifier or slug |
+| `company_name` | Hiring company |
+| `title` | Job title |
+| `description` | Job description |
+| `remote` | Remote-work indicator supplied by the API |
+| `url` | Job-posting or application URL |
+| `tags` | Tags associated with the job |
+| `job_types` | Employment type or job-type information |
+| `location` | Location information provided in the listing |
+| `created_at` | Original job creation timestamp |
+| `posted_date` | Date derived for analysis |
+| `posted_year` | Year derived from the posting date |
+| `posted_month` | Month derived from the posting date |
+
+Additional analytical fields are created during data preparation, including:
+
+- `remote_status`
+- `job_category`
+- `experience_level`
+- `city`
+- `skills`
+- `skill_count`
+
+The exact availability and interpretation of these fields depend on the source data and the project's transformation logic.
+
+### Important Dataset Limitations
+
+- Job postings represent a collected snapshot, not the entire job market.
+- The source has a strong European focus, so findings should not be generalized to every country.
+- Job descriptions and tags may be incomplete or inconsistent.
+- The API's remote-work flag may not capture every remote or hybrid arrangement.
+- Salary information may be unavailable or insufficient for reliable salary comparisons.
+- Job titles, locations, employment types, and experience requirements may require standardization.
+- Skill frequency measures mention or detection frequency in the collected postings, not necessarily the importance of a skill to every employer.
+
+---
+
+## Project Workflow
 
 ```text
-SQL
-Microsoft Excel
-Python
-Power BI
-Tableau
-Pandas
-NumPy
-Statistics
-Data Visualization
-ETL
-Data Modeling
-DAX
-PostgreSQL
-```
-
-The analysis will compare skill frequency and identify combinations of skills commonly requested together.
-
----
-
-# SQL & PostgreSQL Analysis
-
-The cleaned job-market dataset will be loaded into PostgreSQL for structured analysis.
-
-## Job Demand
-
-- Total job postings
-- Jobs by month
-- Jobs by company
-- Jobs by location
-
-## Skill Analysis
-
-- Most requested skills
-- Skill frequency
-- Skills per job
-- Skill combinations
-
-## Experience Analysis
-
-- Jobs by experience level
-- Skills by experience level
-- Experience vs. salary where available
-
-## Location Analysis
-
-- Jobs by city
-- Jobs by region
-- Remote vs. non-remote jobs
-
-## Industry Analysis
-
-- Jobs by industry
-- Skill demand by industry
-- Industry hiring patterns
-
-## Company Analysis
-
-- Top hiring companies
-- Hiring distribution
-- Company-level skill requirements
-
----
-
-# Power BI Dashboard
-
-The final Power BI report will contain three analytical pages.
-
----
-
-## Page 1 — Job Market Overview
-
-### Purpose
-
-Provide a high-level view of the Data Analyst job market.
-
-### KPIs
-
-- Total Job Postings
-- Companies Hiring
-- Locations
-- Remote Jobs
-- Top Skill
-
-### Visuals
-
-- Job Posting Trend
-- Jobs by Location
-- Jobs by Industry
-- Jobs by Experience Level
-- Remote / Hybrid / On-site Distribution
-
----
-
-## Page 2 — Skills & Technology Demand
-
-### Purpose
-
-Understand the skills employers request most frequently.
-
-### Analysis
-
-- Skill Frequency
-- Top Technical Skills
-- Skill Categories
-- Skill Combinations
-- Skills by Experience Level
-- Skills by Industry
-
-### Visuals
-
-- Top Skills
-- Skill Frequency Ranking
-- Skill Distribution
-- Experience vs. Skills
-- Industry vs. Skills
-
----
-
-## Page 3 — Location, Industry & Hiring Trends
-
-### Purpose
-
-Identify where Data Analyst opportunities are concentrated and how hiring varies across the market.
-
-### Analysis
-
-- Jobs by Location
-- Jobs by Industry
-- Jobs by Company
-- Remote Opportunities
-- Hiring Trends
-- Salary Distribution where available
-
-### Visuals
-
-- Top Hiring Locations
-- Top Hiring Companies
-- Industry Distribution
-- Work Arrangement
-- Salary Analysis
-- Posting Trends
-
----
-
-# Business Questions
-
-The final analysis will answer questions such as:
-
-```text
-Which skills are most frequently requested?
-
-How often are SQL, Excel, Python, and Power BI required?
-
-Which locations have the highest Data Analyst demand?
-
-Which industries hire the most Data Analysts?
-
-What experience level is most commonly requested?
-
-How common are remote and hybrid opportunities?
-
-Which companies hire Data Analysts most frequently?
-
-Which technical skills commonly appear together?
-
-How does skill demand change by experience level?
-
-Which skills should aspiring Data Analysts prioritize?
+Public Job Board API
+        |
+        v
+API Data Collection
+        |
+        v
+Raw JSON Dataset
+        |
+        v
+Python Data Cleaning
+        |
+        v
+Feature Engineering
+        |
+        v
+Exploratory Data Analysis
+        |
+        v
+Skill Extraction and Analysis
+        |
+        v
+PostgreSQL Database
+        |
+        v
+SQL Business Analysis
+        |
+        v
+Power BI Dashboard
+        |
+        v
+Business Insights and Conclusions
 ```
 
 ---
 
-# Business Insights
-
-The analysis will be used to identify:
-
-- High-demand technical skills
-- Important business skills
-- Strong hiring locations
-- Major hiring industries
-- Common experience requirements
-- Remote work opportunities
-- Skill combinations
-- Emerging technology requirements
-- Potential portfolio skill priorities
-
----
-
-# Business Recommendations
-
-The final findings may support recommendations such as:
-
-### Skill Development
-
-Prioritize frequently requested skills that align with Data Analyst job requirements.
-
-### Portfolio Development
-
-Build projects demonstrating practical use of high-demand tools.
-
-### Location Strategy
-
-Identify regions with higher concentrations of relevant job opportunities.
-
-### Experience Strategy
-
-Understand entry-level requirements and the skills expected at different career stages.
-
-### Career Planning
-
-Use job-market evidence to prioritize learning and portfolio development.
-
----
-
-# Dashboard Preview
-
-Final Power BI screenshots will be added after dashboard development.
-
-Recommended files:
-
-```text
-visuals/
-├── dashboard_job_market_overview.png
-├── dashboard_skill_demand.png
-└── dashboard_location_industry.png
-```
-
----
-
-# Repository Structure
+## Repository Structure
 
 ```text
 data-analyst-job-market-analysis/
 │
 ├── dataset/
+│   ├── raw_jobs.json
+│   ├── job_market_clean.csv
+│   ├── job_market_analysis.csv
+│   ├── core_data_analytics_skills.csv
+│   ├── data_analyst_skill_combinations.csv
+│   ├── skill_combinations.csv
+│   ├── skill_frequency.csv
+│   ├── skills_by_category.csv
+│   └── skills_by_experience.csv
 │
 ├── notebooks/
-│   └── job_market_analysis.ipynb
+│   ├── 01_api_data_collection.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   ├── 03_job_market_eda.ipynb
+│   └── 05_skills_analysis.ipynb
 │
 ├── sql/
 │   └── job_market_analysis.sql
 │
+├── powerbi/
+│   └── job_market_analysis.pbix
+│
 ├── visuals/
 │
-├── powerbi/
-│
 ├── report/
+│
+├── src/
 │
 ├── .gitignore
 └── README.md
 ```
 
+*Note: The structure above documents the intended project organization. Keep only files and folders that actually exist in the repository, and update the list if their names change.*
+
 ---
 
-# Project Status
+## Data Collection and Preparation
+
+The data preparation workflow includes the following steps:
+
+1. Connect to the public job-board API.
+2. Retrieve the available job postings.
+3. Preserve the raw API response for traceability.
+4. Convert the relevant fields into a structured dataset.
+5. Inspect missing values and duplicate postings.
+6. Standardize column names and data types.
+7. Clean and prepare job titles, company names, and locations.
+8. Convert posting timestamps into date-based analytical fields.
+9. Create analytical categories where the source data supports them.
+10. Extract and standardize relevant technical skills.
+11. Export the prepared datasets for SQL analysis and visualization.
+
+Raw data is retained separately from cleaned and analytical datasets to make the transformation process easier to review.
+
+---
+
+## Exploratory Data Analysis
+
+Python is used to investigate patterns in the collected job postings.
+
+### 1. Job Demand Analysis
+
+- Count job postings by job category.
+- Identify frequently appearing job titles.
+- Compare the distribution of data analyst and related roles.
+- Examine the number of postings by company.
+
+### 2. Geographic Analysis
+
+- Identify locations with the highest number of postings.
+- Examine city-level job distribution where locations can be standardized.
+- Identify listings with missing, ambiguous, or remote-only locations.
+- Compare opportunities across locations represented in the dataset.
+
+### 3. Work Arrangement Analysis
+
+- Compare listings marked as remote and non-remote.
+- Examine the distribution of work arrangements.
+- Compare remote opportunities across job categories.
+
+### 4. Employment and Experience Analysis
+
+- Analyze employment types using the available job-type field.
+- Examine experience levels when they can be reliably inferred.
+- Identify common patterns in entry-level and experienced roles.
+
+### 5. Technical Skills Analysis
+
+- Measure the frequency of selected skills.
+- Compare SQL, Python, Excel, Power BI, and Tableau mentions.
+- Examine skills across job categories.
+- Identify frequently occurring combinations of skills.
+
+All findings are based on the collected dataset. They should not be interpreted as universal job-market statistics.
+
+---
+
+## Skills Analysis
+
+Technical skills are an important part of preparing for a Data Analyst role.
+
+The project investigates the presence of commonly requested skills, including:
+
+- SQL
+- Python
+- Microsoft Excel
+- Power BI
+- Tableau
+
+Additional skills are included when supported by the collected job descriptions and tags.
+
+### Key Questions
+
+- Which skills appear most frequently in the collected postings?
+- How often are SQL and Python mentioned together?
+- How frequently do employers mention Excel and SQL?
+- How often are Power BI and Tableau mentioned?
+- Which skills appear across multiple job categories?
+- How do skill mentions vary by inferred experience level?
+
+Skill extraction relies on the project's matching and standardization rules. Results may be affected by abbreviations, synonyms, context, and the quality of job descriptions.
+
+---
+
+## PostgreSQL and SQL Analysis
+
+PostgreSQL is used to store the structured job-posting dataset and perform analytical queries.
+
+**Database:** `job_market_db`
+
+**Main table:** `job_postings`
+
+The SQL analysis covers the following business questions:
+
+1. What is the total number of job postings?
+2. How many unique job postings are present?
+3. Which job categories have the highest posting counts?
+4. Which job titles appear most frequently?
+5. Which companies have the highest number of postings?
+6. Which locations have the greatest job demand?
+7. What is the distribution of remote and non-remote listings?
+8. Which employment types appear most frequently?
+9. What is the distribution of experience levels?
+10. Which technical skills are mentioned most frequently?
+11. How often are Python, SQL, Excel, Power BI, and Tableau mentioned?
+12. Which combinations of technical skills appear in the dataset?
+13. Which skills are associated with specific job categories?
+14. How do skill mentions vary across experience levels?
+15. How are job postings distributed across posting dates and months?
+16. Which remote opportunities appear in particular job categories?
+17. Is salary analysis feasible using the available source data?
+
+The complete, commented SQL analysis is maintained in:
+
+`sql/job_market_analysis.sql`
+
+---
+
+## Power BI Dashboard
+
+The Power BI dashboard is designed to present the results of the job-market analysis in an interactive and business-friendly format.
+
+### Page 1 — Job Market Overview
+
+**Purpose:** Present a high-level view of the collected job postings.
+
+Planned components:
+
+- Total job postings
+- Unique companies
+- Unique locations
+- Remote and non-remote job distribution
+- Job postings by category
+- Job postings by location
+- Job-posting trends over time
+- Experience-level distribution, where supported
+
+### Page 2 — Skills and Requirements
+
+**Purpose:** Explore technical skills mentioned in job postings.
+
+Planned components:
+
+- Most frequently mentioned skills
+- Skill frequency comparison
+- Skills by job category
+- Common skill combinations
+- Skills by experience level, where supported
+- SQL, Python, Excel, Power BI, and Tableau analysis
+
+### Page 3 — Companies, Locations and Opportunities
+
+**Purpose:** Examine where opportunities appear and which companies are hiring.
+
+Planned components:
+
+- Top companies by posting count
+- Job distribution by location
+- Job categories by location
+- Remote opportunities by category or location
+- Employment-type distribution
+- Salary analysis only if the available data is sufficiently complete and comparable
+
+The final visuals and KPIs will depend on data quality, field availability, and validation of the underlying calculations.
+
+---
+
+## Key Business Questions
+
+This project is designed to answer practical questions for aspiring Data Analysts:
+
+- Which analytics-related roles appear most often in the collected data?
+- Which technical skills are mentioned most frequently?
+- How often do job postings mention SQL and Python together?
+- Which companies have the most postings in the snapshot?
+- Which locations show the greatest number of collected opportunities?
+- What proportion of listings are marked as remote?
+- Which employment types are represented?
+- How do skill requirements vary between job categories?
+- What limitations should job seekers consider when interpreting these results?
+
+---
+
+## Business Value
+
+The analysis can help job seekers:
+
+- Prioritize technical skills for further study.
+- Understand how SQL, Python, Excel, and BI tools appear in job descriptions.
+- Explore differences between analytics-related roles.
+- Identify locations and companies represented in the dataset.
+- Compare remote and non-remote opportunities.
+- Use observed skill combinations to guide portfolio development.
+
+For recruiters and workforce analysts, the project demonstrates a structured approach to transforming job postings into measurable indicators of employer demand.
+
+These findings support preparation and exploration; they do not guarantee employment outcomes or establish the full demand for any skill across the global market.
+
+---
+
+## Data Quality and Validation
+
+The project includes validation checks to improve the reliability of the analysis.
+
+- Check total rows and unique job-posting identifiers.
+- Identify duplicate records.
+- Review missing values in important fields.
+- Validate posting-date conversions.
+- Inspect inconsistent job titles and locations.
+- Verify skill-extraction rules.
+- Compare Python and SQL aggregate results.
+- Validate Power BI measures against the prepared dataset.
+- Avoid reporting unsupported salary statistics.
+- Document source limitations and the collection date.
+
+Where analytical categories are inferred from job titles or descriptions, they should be treated as derived classifications rather than source-provided facts.
+
+---
+
+## Results and Key Findings
+
+This section will summarize the main findings after the analysis and dashboard have been finalized.
+
+Planned reporting areas:
+
+- Overall job-posting distribution
+- Most frequent analytics-related roles
+- Most frequently mentioned technical skills
+- Common skill combinations
+- Leading companies and locations in the collected snapshot
+- Remote versus non-remote distribution
+- Employment-type and experience-level patterns
+- Data quality limitations and recommendations for job seekers
+
+Only results verified against the final dataset will be reported here.
+
+---
+
+## Project Status
 
 | Component | Status |
-|---|:---:|
-| Repository Setup | ✅ Completed |
-| Data Source Selection | ⏳ Pending |
-| Data Collection | ⏳ Pending |
-| Data Validation | ⏳ Pending |
-| Data Cleaning | ⏳ Pending |
-| Feature Engineering | ⏳ Pending |
-| Python EDA | ⏳ Pending |
-| Skill Analysis | ⏳ Pending |
-| PostgreSQL Setup | ⏳ Pending |
-| SQL Analysis | ⏳ Pending |
-| Power BI Dashboard | ⏳ Pending |
-| Business Insights | ⏳ Pending |
-| Final Documentation | ⏳ Pending |
+|---|---|
+| API data collection | Completed |
+| Raw data preservation | Completed |
+| Data cleaning | Completed |
+| Feature engineering | Completed |
+| Python EDA | Completed |
+| Skills analysis | Completed |
+| PostgreSQL data import | Completed |
+| SQL business analysis | Completed |
+| SQL documentation | Completed |
+| Power BI dashboard | In progress |
+| Dashboard validation | Pending |
+| Final project documentation review | Pending |
+
+*Update these statuses as the remaining dashboard work and final validation are completed.*
 
 ---
 
-# Skills Demonstrated
+## How to Run the Project
 
-## Data Analysis
+### 1. Clone the Repository
 
-- Data Cleaning
-- Data Validation
-- Exploratory Data Analysis
-- KPI Development
-- Job Market Analysis
-- Skill Analysis
-- Market Segmentation
-- Business Analysis
-
-## Programming & Data Collection
-
-- Python
-- Pandas
-- NumPy
-- API Data Collection
-- Requests
-
-## SQL & Database
-
-- SQL
-- PostgreSQL
-- pgAdmin
-
-## Business Intelligence
-
-- Power BI
-- DAX
-- Power Query
-- Dashboard Development
-
-## Development Tools
-
-- Jupyter Notebook
-- VS Code
-- Git
-- GitHub
-
----
-
-# Analytical Concepts
-
-This project applies:
-
-- Descriptive Analytics
-- Exploratory Data Analysis
-- Job Market Analytics
-- Skill Demand Analysis
-- Market Segmentation
-- KPI Analysis
-- Geographic Analysis
-- Industry Analysis
-- Trend Analysis
-- Business Intelligence
-- Data Visualization
-- Data Storytelling
-- Data-Driven Decision Making
-
----
-
-# Analytical Disclaimer
-
-Job-market findings depend on the data source, collection period, geographic coverage, and availability of job postings.
-
-The results represent patterns within the collected dataset and should not be treated as a complete representation of the entire Data Analyst job market.
-
-Salary information may be incomplete or unavailable for some job postings.
-
-Job postings and skill requirements can change over time, so findings should be interpreted within the relevant collection period.
-
----
-
-# Project Objective
-
-The objective of this project is to demonstrate a practical **Job Market Analytics workflow** using Python, API-based data collection, SQL, PostgreSQL, and Power BI.
-
-```text
-Data Collection
-        ↓
-Data Cleaning
-        ↓
-Python Analysis
-        ↓
-Skill Analysis
-        ↓
-SQL / PostgreSQL
-        ↓
-Market Segmentation
-        ↓
-Power BI
-        ↓
-Business Insights
-        ↓
-Career & Market Recommendations
+```bash
+git clone https://github.com/Uveshkhan2005/data-analyst-job-market-analysis.git
 ```
 
----
+### 2. Navigate to the Project Folder
 
-# Project Outcome
-
-This project demonstrates how a Data Analyst can:
-
-- Collect data from an external source
-- Clean and structure unorganized job-market data
-- Analyze job demand
-- Identify high-demand skills
-- Compare locations and industries
-- Analyze experience requirements
-- Perform SQL-based analysis
-- Build interactive dashboards
-- Communicate market insights
-- Support data-driven career and business decisions
-
----
-
-# Author
-
-## Uveshkhan Lohani
-
-**B.E. Information Technology Graduate | Aspiring Data Analyst**
-
-Focused on building practical expertise in:
-
-- Data Analytics
-- Python
-- SQL
-- PostgreSQL
-- Power BI
-- Business Intelligence
-
----
-
-# Connect
-
-**LinkedIn:**  
-https://www.linkedin.com/in/uveshkhan-lohani-615793273/
-
-**Email:**  
-uveshkhanlohani65@gmail.com
-
----
-
-# Portfolio Project
-
-This project is part of my Data Analytics portfolio and demonstrates practical experience in applying analytics to real-world job-market data.
-
-```text
-Data Collection
-      ↓
-Data Analysis
-      ↓
-Skill & Market Insights
-      ↓
-Business Intelligence
-      ↓
-Decision Support
+```bash
+cd data-analyst-job-market-analysis
 ```
 
+### 3. Install the Python Dependencies
+
+Install the libraries used by the notebooks:
+
+```bash
+pip install pandas numpy requests matplotlib seaborn jupyter
+```
+
+Additional packages may be required if the implementation uses other libraries.
+
+### 4. Run the Notebooks
+
+Open Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+Run the notebooks in the appropriate order, beginning with data collection and continuing through cleaning, EDA, and skills analysis.
+
+### 5. Set Up PostgreSQL
+
+Create the database:
+
+```sql
+CREATE DATABASE job_market_db;
+```
+
+Connect to the database and import the prepared dataset into the `job_postings` table using the documented import process.
+
+Run the commented SQL queries in:
+
+`sql/job_market_analysis.sql`
+
+### 6. Open the Power BI Dashboard
+
+Open the `.pbix` file from the `powerbi/` folder once the dashboard has been finalized.
+
+If the dataset path differs on your computer, update the Power BI data source settings and refresh the data.
+
 ---
 
-# Key Takeaway
+## Ethical Use and Source Attribution
 
-> **Data Analyst Job Market Analysis demonstrates how job-market data can be collected, transformed, analyzed, and visualized to identify skill demand, hiring patterns, and actionable career insights using Python, SQL, PostgreSQL, and Power BI.**
+The data is obtained from the public [Arbeitnow Job Board API](https://www.arbeitnow.com/blog/job-board-api).
+
+The project should comply with the API's current terms and applicable source requirements. Include appropriate source attribution and a link to Arbeitnow when presenting results derived from its data.
+
+Job postings may expire, be updated, or be removed. The analysis should be understood as a snapshot of the data collected at a particular time.
+
+The project does not claim to represent all employers, job boards, industries, or geographic markets.
+
+---
+
+## Future Improvements
+
+Potential improvements include:
+
+- Automating periodic API data collection.
+- Comparing snapshots to measure changes in job-posting counts.
+- Improving job-title and location standardization.
+- Refining skill extraction using synonyms and context-aware matching.
+- Adding salary analysis if reliable salary data becomes available.
+- Comparing job categories and experience requirements over time.
+- Adding automated data-quality checks.
+- Improving dashboard navigation and filtering.
+- Documenting reproducible data refresh steps.
+
+These improvements will be considered based on API availability, data quality, and project scope.
+
+---
+
+## Author
+
+**Uveshkhan Lohani**
+
+B.E. in Information Technology | Aspiring Data Analyst
+
+### Technical Skills
+
+Python | Pandas | NumPy | SQL | PostgreSQL | Power BI | DAX | Excel | Data Cleaning | Exploratory Data Analysis | Data Visualization | Git | GitHub
+
+### GitHub Repository
+
+[Data Analyst Job Market Analysis](https://github.com/Uveshkhan2005/data-analyst-job-market-analysis)
+
+---
+
+## Disclaimer
+
+This project is for educational and portfolio purposes. The findings reflect the job postings collected from the selected API at the time of data collection. They should not be interpreted as a complete or statistically representative measure of the global job market.
+
+Job availability, descriptions, and requirements can change over time. All conclusions should be interpreted in the context of the dataset's source, scope, and limitations.
